@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Заявка на работу</title>
+        <style>
+        form {
+            width: 480px;
+        }  
+        </style>
+    </head>
+    <body>
+        <form action="subscribe.php" name="first form" autocomplete="on">
+            <strong><h2>Форма заявки на работу в зоопарке</h2></strong>
+            <em><i>Пожалуйста, заполните форму. Обязательные поля помечены <font color="red">*</font></i></em>
+            <p>
+             <fieldset>
+                <legend><b>Контактная информация</b></legend>
+                <p><span>Имя<font color="red">*</font></span>                
+                    <input type="text" style="width: 170px" maxlength="20" autofocus required><br>
+                </p>
+                <p><span>Телефон</span>
+                <input  type="tel" style="width: 170px" pattern='\s{0,}\+{1,1}375\s{0,}\({0,1}(([2]{1}([5]{1}|[9]{1}))|([3]{1}[3]{1})|([4]{1}[4]{1}))\)\s{0,}[0-9]{3,3}\s{0,}[0-9]{4,4}'><br>
+                </p>
+                <p><span>Email<font color="red">*</font></span>
+                <input type="email" style="width: 170px" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><b>Персональная информация</b></legend>
+                <p><span>Возраст<font color="red">*</font></span>
+                <input type="number" style="width: 170px" min="1" max="99" required><br>
+                </p>
+                <p><span>Пол</span>
+                <select style="width: 170;">
+                    <option value="Женщина">Женщина</option>
+                    <option value="Мужчина">Мужчина</option>
+                    <option value="Иное">Иное</option>
+                </select><br>
+                </p> 
+                <p><span>Перечислите личные качества</span><br>
+                <textarea rows="10" cols="10" maxlength="200" style="width: 170px"></textarea><br> 
+                </p>  
+            </fieldset>
+                    <fieldset>
+                    <legend><b>Выберите ваших любимых животных</b></legend>
+                        <p> 
+                            <label><input type="checkbox">Зебра</label>
+                            <label><input type="checkbox">Кошка</label>
+                            <label><input type="checkbox">Анаконда</label>
+                            <label><input type="checkbox">Человек</label>
+                        </p>
+                        <p>
+                            <label><input type="checkbox">Слон</label>
+                            <label><input type="checkbox">Антилопа</label>
+                            <label><input type="checkbox">Голубь</label>
+                            <label><input type="checkbox">Краб</label>
+                        </p>                     
+                    </fieldset>
+             <p><label><input type="submit" value="Отправить информацию"></label>
+            </p> 
+            </form>
+    </body>
+</html>    
