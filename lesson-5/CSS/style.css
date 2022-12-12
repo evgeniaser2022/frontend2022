@@ -1,0 +1,122 @@
+*, :before, :after {
+    padding: 0;
+    outline: 0;
+    border: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url(../Fonts/static/Montserrat-Medium.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url(../Fonts/static/Montserrat-Bold.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'MontserratMedium', Arial, sans-serif;
+    font-size: 1px;
+    font-style: normal;
+    width: 1220px;
+    height: 669px;
+}
+
+section {
+    width: 1220px;
+    height: 669px;    
+}
+
+h1 {
+    font-family: 'MontserratBold';
+    font-size: 40px;
+    text-align: center;    
+    margin-top: 0px;
+    margin-left: 31px;
+    margin-right: 29px;
+    margin-bottom: 20px;  
+}
+
+p.title {
+    text-align: center;
+    line-height: 31.2px;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.level {
+    margin-top: 25px;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: solid;
+    border-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(39, 83, 162, 0.25);
+    border-radius: 10px;
+    width: 384px;
+    height: 467px;
+    overflow: hidden;
+}
+
+#lastbox {
+    margin-right: 0;
+} 
+
+svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.head1, .head2, .head3 {
+    color:#2753A2 ;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.head1 {
+    font-size: 26em;
+}
+
+.head2 {
+    font-size: 1.625rem;
+}
+
+.head3 {
+    font-size: 26px;
+}
+
+div p {
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 140%;
+}
+
+.textblock1 {
+    font-size: 20em;
+   
+}
+
+.textblock2 {
+    font-size: 1.25rem;
+  
+}
+
+.textblock3 {
+    font-size: 20px;
+}
