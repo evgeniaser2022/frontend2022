@@ -22,13 +22,17 @@
   font-display: swap;
 }
 
-html {
+body {
   font-family: 'Poppins_Regular', Arial, sans-serif;
   font-size: 14px;
 }
 
+.content {
+  width: 1120px;
+}
+
 h1 {
-display: inline;
+display: flex;
 font-size: 28px;
 line-height: 42px;
 }
@@ -38,55 +42,35 @@ h1::after {
   display: inline-block;
   width: 30px;
   height: 30px;
-  position: relative;;
-  
+  position: relative;  
 }
 
 p {
     font-size: 16px;
 }
 
-.col1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 365px;
-  height: 446px;
-}
-
-.col2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 600px;
-  float: left;
-  padding: 5px;
-  font-family: 'Poppins' sans-serif;
-}
-
 ul {
-  display: inline-block;
-  font-size: 17px;
-  padding: 0;
-  }
+  width: 650px;
+}
 
-li {
+.item {
   list-style-type: none;
-  }
-
-.line1::before {
-  content: url(../image/first.svg);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.line2::before {
-  content: url(../image/second.svg);
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 
-.line3::before {
-  content: url(../image/third.svg);
+.item-title {
+    margin-top: 0;
 }
 
-.line4::before {
-  content: url(../image/forth.svg);
+.item img {
+  margin-right: 15px;
 }
