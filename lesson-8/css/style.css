@@ -1,0 +1,116 @@
+* :before, :after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gilroy-Semibold", sans-serif;
+    src: url(../lesson-8/fonts/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font: 600 20px/1.1 "Gilroy-Semibold", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    max-width: 1400px;
+    max-height: 678px;
+    margin: auto;    
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 100%;
+    margin: 0 0 60px 0;
+}
+
+.general_wrap {   
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    box-shadow: 0 0 2px #C7C7C7;
+    border-radius: 5px;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    box-shadow: 0 0 2px #C7C7C7;   
+}
+
+label {
+    cursor: pointer;
+}
+
+.fool_list {
+    width: 65.71%;  
+    height: auto;
+}
+
+.item {
+    width: 100%;
+    height: auto;
+}
+
+span {  
+    height: 72.875px;
+    line-height: 72.875px;
+    display: inline-block; 
+    padding-left: 30px;   
+}
+
+.content {
+    font: 400 16px/1.1 "Gilroy-Semibold", sans-serif;
+}
+
+.wrap_one_line {
+    height: 72.875px;
+    overflow: hidden;
+}
+
+.title_down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked +.wrap_one_line {
+    height: auto;
+}
+
+label:hover .title {
+    color: rgb(145, 141, 141);
+}
+
+.men-in-chair {
+    width: 440px;    
+    height: 583px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    top:auto;
+    bottom: auto;
+}
+
+svg.down {
+    width: 16px;
+    height: 9px;
+    margin-right: 30px;
+}
