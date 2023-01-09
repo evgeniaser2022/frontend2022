@@ -1,0 +1,87 @@
+body {
+    height: 100vh;
+    background: url(../image/wallpap.jpg);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    filter: blur(2.5px);
+}
+
+.ellipse {
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    border: 15px solid rgb(137, 139, 137);
+    border-radius: 50%;
+    border-left: none;
+    border-right: none;    
+}
+
+.one {
+    animation: one 2.5s -1s linear infinite;
+    border-color: rgb(124, 129, 129);
+}
+
+.two {
+    animation: two 2.5s -0.5s linear infinite;
+    border-color: rgba(119, 148, 153, 0.527);
+}
+
+.three {
+    animation: three 2.5s linear infinite;
+    border-color: rgb(230, 236, 238);
+}
+
+@keyframes one {
+    0% {
+        transform: rotateX(45deg) rotateY(45deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(45deg) rotateY(45deg) rotateZ(360deg);        
+    }    
+}
+
+@keyframes two {
+    0% {
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(360deg);
+    }    
+}
+
+@keyframes three {
+    0% {
+        transform: rotateX(-45deg) rotateY(45deg) rotateZ(0);
+    }   
+    100% {
+        transform: rotateX(-45deg) rotateY(45deg) rotateZ(360deg);
+    }    
+}
+
+.logo {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    animation: logo 2.5s linear infinite;
+}
+
+@keyframes logo {
+    0% {
+        filter: blur(1.5px);
+    }  
+    50% {
+        transform: scale(1.15);
+        filter: none;  
+    }
+    100% {        
+        filter: blur(1.5px);
+    }
+}
